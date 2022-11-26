@@ -1,0 +1,139 @@
+body{
+  background: linear-gradient(to right, #070707, #333333 );
+  overflow-x: hidden;
+}
+
+#navlist {
+  background-color: #333333;
+  height:40px ;
+  width: 120%;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+#navlist a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#navlist a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container{
+  background: #fff;
+  width: 540px;
+  height: 480px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 7%;
+  margin-left: 450px;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, .5);
+}
+
+
+.leftbox{
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: #3C5A9C;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  border: .1em solid #fff;
+}
+
+
+nav a{
+  list-style: none;
+  padding: 35px;
+  color: #fff;
+  font-size: 1.1em;
+  display: block;
+  transition: all .3s ease-in-out;
+}
+
+nav a:hover{
+  color: black;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+nav a:first-child{
+  margin-top: 7px;
+}
+
+
+.right-box{
+  width: 60px;
+  margin-left: 27%;
+ 
+}
+
+.profile.tabShow{
+  height: 80px;
+}
+
+.tabShow{
+  transition: all .5s ease-in;
+  width: 80%;
+  position: absolute;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+h2{
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+
+.input, p{
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 80%;
+  font-family: "montserrat",sans-serif;
+  font-size: .7em;
+  padding: 7px 0;
+  color:#070707;
+  outline: none;
+}
+
+span{
+  font-size: .7em;
+  color:#3C5A9C
+}
+
+.btn{
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0;
+  color:#fff;
+  background: #3C5A9C;
+  padding: 7px 15px;
+  box-shadow: 0px 2px 4px 0px rgb(104, 19, 232);
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.tabShow{
+  display: none;
+}

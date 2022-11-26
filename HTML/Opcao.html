@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_opc.css">
+</head>
+<body>
+    
+    <div id="navlist">
+        <a href="Feed.html">Change Fig</a>
+        <a href="About.html">About Us</a>
+        <a href="Contato.html">Contact Us</a>
+        <a href="Opcao.html">Preferencias</a>
+    </div>
+     
+
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab active">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                    <i class="fa fa-credit-card"></i>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+                <a onclick="tabs(3)" class="tab">
+                    <i class="fa fa-lock"></i>
+                </a>
+                <a onclick="tabs(4)" class="tab">
+                    <i class="fa fa-exclamation-circle"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="right-box">
+            <div class="profile tabShow">
+                <h1>Informações Pessoais</h1>
+                <h2>Nome Completo</h2>
+                <input type="text" class="input" value="Isabella Sanches">
+                <h2>Nome de Usuário</h2>
+                <input type="text" class="input" value="10/06/2004">
+                <h2>Telefone</h2>
+                <input type="text" class="input" value="(11) 97523-xxxx">
+                <h2>Email</h2>
+                <input type="text" class="input" value="Isabella@email.com">
+                <h2>Senha</h2>
+                <input type="password" class="input" value="xxxxx-xxxxx">
+                <h2>Gênero</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Feminino</option>
+                        <option value="ps5">Masculino</option>
+                        <option value="nsw">Outro</option>
+                        <option value="pcg">Prefiro não dizer</option>
+                    </select>
+                </form>
+                <button class="btn">Update</button>
+            </div>
+            <div class="payment tabShow">
+                <h1>Formas de Pagamentos Salvas</h1>
+                <h2>Opções de Pagamentos</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="cartao" >Cartão de Crédito/Debito</option>
+                        <option value="pix">Pix</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </form>
+                <h2>Estado</h2>
+                <input type="text" class="input" value="São Paulo">
+                <h2>Endereço</h2>
+                <input type="text" class="input" value="São Bernado">
+                <h2>CEP</h2>
+                <input type="text" class="input" value="06152-123">
+                <h2>Cartão Salvo</h2>
+                <input type="text" class="input" value="Visa - 1234-xxxx-0712"><button class="btn">Update</button>
+            </div>
+            <div class="subscription tabShow">
+                <h1>Notificações</h1>
+                <h2>Notificar curtidas e comentários em suas postagens:</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Sim, somente de amigos</option>
+                        <option value="ps5">Sim, somente de amigos e seguidores</option>
+                        <option value="ps5">Sim, de todos</option>
+                        <option value="ps5">Não me Notificar</option>
+                    </select>
+                </form>
+                <h2>Receber Notificações por:</h2>
+                <select name="plataforma">
+                    <option value="email">E-mail</option>
+                    <option value="sms">SMS</option>
+                    <option value="email_sms">E-mail e SMS</option>
+                    <option value="not_sms">Não Receber Notificações</option>
+                </select>
+                <h2>Notificar postagens:</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">De amigos</option>
+                        <option value="ps5">De amigos e seguidores</option>
+                        <option value="ps5">De todos</option>
+                        <option value="ps5">Não me Notificar</option>
+                    </select>
+                </form>
+                <h2>Quem pode te enviar mensagens:</h2>
+                <select name="plataforma">
+                    <option value="xbox">Amigos</option>
+                    <option value="ps5">Seguidores</option>
+                    <option value="nsw">Desconhecidos</option>
+                    <option value="pcg">Todos</option>
+                </select>
+                <h2>Deixar as pessoas te seguir:</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Sim!</option>
+                        <option value="ps5">Não!</option>
+                    </select>
+                </form>
+
+                <h2>Notificar solicitações de Amizade:</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Sim!</option>
+                        <option value="ps5">Não!</option>
+                    </select>
+                </form>
+                <button class="btn">Update</button>
+            </div>
+            <div class="privacy tabShow">
+                <h1>Privacidade</h1>
+                <h2>Email Reserva ou Telefone de recuperação</h2>
+                <input type="text" class="input" value="Isabella2@hotmail.com">
+                <h2>Coloque o @ das contas que deseja bloquear</h2>
+                <input type="text" class="input" value="Atualmente nenhuma conta">
+                <h2>Privar sua conta</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Sim!</option>
+                        <option value="ps5">Não!</option>
+                    </select>
+                </form>
+                <h2>Bloquear Anúncios</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Sim!</option>
+                        <option value="ps5">Não!</option>
+                    </select>
+               </form>
+                <h2>Permitir Localização para uma melhor experiência</h2>
+                <form>
+                    <select name="plataforma">
+                        <option value="xbox">Sim!</option>
+                        <option value="ps5">Não!</option>
+                    </select>
+                </form>
+                <button class="btn">Update</button>
+            </div>
+            <div class="settings tabShow">
+                <h1>Termos e Politícas</h1>
+                <h2>Privacidade</h2>
+                <i class="fa fa-user-secret"><a href="Feed.html"> Politícas de Privacidade</a></i>
+                <h2>Termos e serviços</h2>
+                <i class="fa fa-sticky-note"><a href="Feed.html"> Politícas de Termos e serviços</a></i>
+                <h2>Anúncios</h2>
+                <i class="fa fa-line-chart"><a href="Feed.html"> Politícas de Anúncios</a></i>
+                <h2>Diretrizes</h2>
+                <i class="fa fa-lock"><a href="Feed.html"> Diretrizes da Comunidade</a></i>
+                <h2>Pagamentos</h2>
+                <i class="fa fa-money"><a href="Feed.html"> Termos de Pagamaentos da Comunidade</a></i>
+                
+        </div>
+    </div>
+
+
+
+
+
+    <script src ="script.js"></script>
+    <script>
+        const tabBtn = document.querySelectorAll(".tab");
+        const tab = document.querySelectorAll(".tabShow");
+
+        function tabs(panelIndex) {
+            tab.forEach(function(node){
+                node.style.display = "none";
+            });
+            tab[panelIndex].style.display = "block";
+        }
+        tabs(0);
+    </script>
+    <script>
+        $(".tab").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+
+    </script>
+</body>
+</html>
